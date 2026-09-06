@@ -2,3 +2,4 @@ cd "D:\바탕화면\img-crop"
 .\venv\Scripts\Activate.ps1
 python crop_by_markers.py --input_dir ./scans --output_dir ./cropped --size 1000 --margin -60
 python clean_background.py --input_dir ./cropped --output_dir ./cleaned --threshold 230
+python make_transparent.py --input_dir ./cleaned --output_dir ./transparent
